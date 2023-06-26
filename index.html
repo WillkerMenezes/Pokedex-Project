@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content=""IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Will's PokeDéx</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./src/css/reset.css">
+        <link rel="stylesheet" href="./src/css/estilos.css">
+        <link rel="stylesheet" href="./src/css/scrollbar.css">
+
+        <style>
+            .dialog-overlay {
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(0, 0, 0, 0.5);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              z-index: 9999;
+            }
+        
+            .dialog-box {
+              background-color: #f2f2f2;
+              border: 1px solid #ccc;
+              padding: 20px;
+              text-align: center;
+            }
+        
+            .dialog-close {
+              margin-top: 20px;
+              cursor: pointer;
+            }
+          </style>
+    </head>
+    <body>
+        <header>
+            <a href="#">
+                <img src="./src/imagens/favicon.png" alt="pokebola" class = "logo">
+            </a>
+            <a href="#">
+                <img src="./src/imagens/pokedex.png" alt="pokedex" class = "logo2">
+            </a>
+            <button id="botao-alterar-tema">
+                <img src="./src/imagens/sun.png" alt="imagem do sol" class = "imagem-botao">
+            </button>
+        </header>
+        <div class="dialog-overlay">
+            <div class="dialog-box">
+              <h3>Seja bem-vindo(a)!</h3>
+              <br>
+              <p>Este é um projeto de PokéDex criado com noções básicas de HTML, CSS e JavaScript,</p>
+              <p>para ser usado como parte do meu <i>portfolio</i>.</p>
+              <br>
+              <p>~Willker Menezes</p>
+              <br>
+              <p class="dialog-close">Fechar</p>
+            </div>
+          </div>
+          <script>
+            window.addEventListener('DOMContentLoaded', function() {
+              var dialogOverlay = document.querySelector('.dialog-overlay');
+              var dialogClose = document.querySelector('.dialog-close');
+        
+              dialogClose.addEventListener('click', function() {
+                dialogOverlay.style.display = 'none';
+              });
+            });
+          </script>
+        <main>
+            <ul class="listagem-pokemon">
+                <li class="cartao-pokemon">
+                    <div class="informacoes">
+                        <span>Bulbasaur</span>
+                        <span>#001</span>
+                    </div>
+                    <img src="./src/imagens/bulbasaur.gif" alt="Bulbasaur" class="gif">
+                    <ul class="tipos">
+                        <li class="tipo grama">Grama</li>
+                        <li class="tipo veneno">Veneno</li>
+                    </ul>
+                    <p class="descricao">Enquanto é jovem, usa os nutrientes que estão armazenados na semente em suas costas para crescer.</p>
+                </li>
+
+                <li class="cartao-pokemon">
+                    <div class="informacoes">
+                        <span>Ivysaur</span>
+                        <span>#002</span>
+                    </div>
+                    <img src="./src/imagens/ivysaur.gif" alt="Ivysaur" class="gif">
+                    <ul class="tipos">
+                        <li class="tipo grama">Grama</li>
+                        <li class="tipo veneno">Veneno</li>
+                    </ul>
+                    <p class="descricao">A exposição à luz solar aumenta a sua força. A luz do sol também faz com que o botão nas costas cresça.</p>
+                </li>
+
+                <li class="cartao-pokemon">
+                    <div class="informacoes">
+                        <span>Venusaur</span>
+                        <span>#003</span>
+                    </div>
+                    <img src="./src/imagens/venusaur.gif" alt="Venusaur" class="gif">
+                    <ul class="tipos">
+                        <li class="tipo grama">Grama</li>
+                        <li class="tipo veneno">Veneno</li>
+                    </ul>
+                    <p class="descricao">A planta em suas costas floresce quando ele absorve energia solar. Está sempre em movimento à procura da luz do Sol.</p>
+                </li>
+
+                <li class="cartao-pokemon">
+                    <div class="informacoes">
+                        <span>Charmander</span>
+                        <span>#004</span>
+                    </div>
+                    <img src="./src/imagens/charmander.gif" alt="Charmander" class="gif">
+                    <ul class="tipos">
+                        <li class="tipo fogo">Fogo</li>
+                    </ul>
+                    <p class="descricao">Desde que nasce, uma chama arde na ponta de sua cauda. Sua vida termina se a chama se apaga.</p>
+                </li>
+
+                <li class="cartao-pokemon">
+                    <div class="informacoes">
+                        <span>Charmeleon</span>
+                        <span>#005</span>
+                    </div>
+                    <img src="./src/imagens/charmeleon.gif" alt="Charmeleon" class="gif">
+                    <ul class="tipos">
+                        <li class="tipo fogo">Fogo</li>
+                    </ul>
+                    <p class="descricao">Possui natureza agressiva. Em batalha, ele chicoteia com sua cauda flamejante e corta com garras afiadas.</p>
+                </li>
+
+                <li class="cartao-pokemon">
+                    <div class="informacoes">
+                        <span>Charizard</span>
+                        <span>#006</span>
+                    </div>
+                    <img src="./src/imagens/charizard.gif" alt="Charizard" class="gif">
+                    <ul class="tipos">
+                        <li class="tipo fogo">Fogo</li>
+                    </ul>
+                    <p class="descricao">Diz-se que o fogo de Charizard queima mais quente se ele já tiver passado por duras batalhas.</p>
+                </li>
+
+                <li class="cartao-pokemon">
+                    <div class="informacoes">
+                        <span>Squirtle</span>
+                        <span>#007</span>
+                    </div>
+                    <img src="./src/imagens/squirtle.gif" alt="Squirtle" class="gif">
+                    <ul class="tipos">
+                        <li class="tipo agua">Água</li>
+                    </ul>
+                    <p class="descricao">Quando se sente ameaçado, ele recolhe seus membros para dentro de seu casco e dispara água de sua boca.</p>
+                </li>
+
+                <li class="cartao-pokemon">
+                    <div class="informacoes">
+                        <span>Wartortle</span>
+                        <span>#008</span>
+                    </div>
+                    <img src="./src/imagens/wartortle.gif" alt="Wartortle" class="gif">
+                    <ul class="tipos">
+                        <li class="tipo agua">Água</li>
+                    </ul>
+                    <p class="descricao">É reconhecido como um símbolo de longevidade. Se sua casca tiver algas, o Wartortle é muito velho.</p>
+                </li>
+
+                <li class="cartao-pokemon">
+                    <div class="informacoes">
+                        <span>Blastoise</span>
+                        <span>#009</span>
+                    </div>
+                    <img src="./src/imagens/blastoise.gif" alt="Blastoise" class="gif">
+                    <ul class="tipos">
+                        <li class="tipo agua">Água</li>
+                    </ul>
+                    <p class="descricao">Os canhões em seu casco disparam jatos de água capazes de perfurar até mesmo aço maciço.</p>
+                </li>
+
+                <li class="cartao-pokemon">
+                    <div class="informacoes">
+                        <span>Caterpie</span>
+                        <span>#010</span>
+                    </div>
+                    <img src="./src/imagens/caterpie.gif" alt="Caterpie" class="gif">
+                    <ul class="tipos">
+                        <li class="tipo inseto">Inseto</li>
+                    </ul>
+                    <p class="descricao">Seus pés curtos possuem ventosas que permitem escalar incansavelmente encostas e paredes.</p>
+                </li>
+            </ul>
+        </main>
+        <script src="./src/js/index.js"></script>
+    </body>
+</html>
