@@ -98,12 +98,12 @@ main .cartao-pokemon .tipo {
     border-radius: 10px;
 }
 
-.grama {
+.planta {
     background-color: #7ac74c;
 }
 
 .veneno {
-    background-color: #df67ddfb;
+    background-color: mediumorchid;
 }
 
 .fogo {
@@ -119,11 +119,11 @@ main .cartao-pokemon .tipo {
 }
 
 .normal {
-    background-color: lightgray;
+    background-color: silver;
 }
 
 .lutador {
-    background-color: lightcoral;
+    background-color: tomato;
 }
 
 .voador {
@@ -131,11 +131,11 @@ main .cartao-pokemon .tipo {
 }
 
 .eletrico {
-    background-color: goldenrod;
+    background-color: gold;
 }
 
 .psiquico {
-    background-color: darkorchid;
+    background-color: #df67ddfb;
 }
 
 .pedra {
@@ -147,7 +147,7 @@ main .cartao-pokemon .tipo {
 }
 
 .dragao {
-    background-color: indigo;
+    background-color: slateblue;
 }
 
 .noturno {
@@ -163,7 +163,11 @@ main .cartao-pokemon .tipo {
 }
 
 .fada {
-    background-color: hotpink;
+    background-color: pink;
+}
+
+.terrestre {
+    background-color: peru;
 }
 
 main .descricao {
